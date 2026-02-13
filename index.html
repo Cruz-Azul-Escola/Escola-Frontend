@@ -8,27 +8,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/styleIndex.css">
-    <title>Cruz Azul</title>
+    <link rel="shortcut icon" href="assets/icons/Logo da escola.png" type="image/x-icon">
+    <title>Cruz Azul - Login</title>
 </head>
 <body>
     <header>
-        <img src="assets/icons/Logo da escola.png" alt="">
+        <div>
+            <img src="assets/icons/Logo da escola.png" alt="">
+        </div>
+        <div>
+            <h1><button id="button-area-restrita">Cruz Azul</button></h1>
+            <h4>Portal do Aluno</h4>
+        </div>
     </header>
     <main>
+        <h2>Bem-vindo, ao portal Cruz Azul</h2>
         <div id="container">
-            <div>
-                <img src="assets/images/image 1.png" alt="">
-            </div>
-            <div>
-                <h1>Bem-vindo</h1>
-                <button>Login</button>
-                <p>Aluno novo? <a href="pages/login.html">Crie uma conta</a></p>
-            </div>
+            <img src="assets/icons/Logo da escola.png" alt="">
+            <h2>Faça já o seu Login</h2>
+            <form>
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Digite seu email">
+                </div>
+                <div>
+                    <label for="">Senha</label>
+                    <input type="password" placeholder="Digite sua senha">
+                    <p id="esqueceu-senha">Esqueceu a senha? <a href="pages/esqueceuSenha.html">Crie uma nova</a></p>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Aluno novo? <a href="pages/cadastroAluno.html">Crie uma conta</a></p>
         </div>
     </main>
-    <footer>
-        <button id="button-area-restrita">Cruz Azul</button>
-    </footer>
     <script src="scripts/scriptIndex.js"></script>
 </body>
 </html>
