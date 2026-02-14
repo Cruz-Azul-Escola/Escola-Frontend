@@ -18,18 +18,19 @@
 html, body {
     padding: 0;
     margin: 0;
-    top: 0;
     background-color: var(--corAzulSaturada);
     width: 100%;
     height: 95%;
 }
 input {
+    font-size: var(--tamanho16px);
     border: 2px solid black;
     background-color: transparent;
     border-radius: 60px;
     height: 60px;
     width: 80%;
     padding-left: 20px;
+    padding-right: 20px;
 }
 input::placeholder {
     font-size: var(--tamanho16px);
