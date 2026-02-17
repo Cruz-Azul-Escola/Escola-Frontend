@@ -20,7 +20,7 @@ header img {
 }
 main {
     padding-top: 30px;
-    height: 97.7%;
+    height: 97.8%;
     text-align: center;
 }
 main img {
@@ -29,15 +29,16 @@ main img {
 }
 h1 {
     margin: 0;
+    margin-bottom: -5px;
     font-size: var(--tamanho36px);
     text-align: center;
 }
-main > h2 {
-    padding-bottom: 30px;
-}
-h2 {
+h2, h3 {
     color: var(--corAzul);
     font-weight: bold;
+}
+main > div:nth-child(1) {
+    padding-bottom: 30px;
 }
 #button-area-restrita {
     align-items: center;
@@ -69,15 +70,16 @@ h2 {
     margin-bottom: 10px;
     font-size: var(--tamanho16px);
 }
+p {
+    font-size: var(--tamanho16px);
+    margin: 30px 10px;
+}
 a {
     color: var(--corLaranja);
 }
 #esqueceu-senha {
     text-align: right;
     margin-right: 11%;
-}
-#linkConta {
-    padding-bottom: 0px;
 }
 
 @media(max-width: 1300px) {
@@ -102,8 +104,5 @@ a {
 @media(max-height: 700px) {
     #container {
         height: fit-content;
-    }
-    #linkConta {
-        padding-bottom: 20px;
     }
 }

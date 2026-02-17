@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleDadosCadastrais.css">
     <link rel="stylesheet" href="styles/styleIndex.css">
     <link rel="shortcut icon" href="assets/icons/Logo da escola.png" type="image/x-icon">
     <title>Cruz Azul - Login</title>
@@ -29,16 +30,16 @@
             <form>
                 <div>
                     <label for="">Email</label>
-                    <input type="email" placeholder="Digite seu email">
+                    <input type="email" name="email" placeholder="Digite seu email" required pattern="^[a-zA-Z0-9\._]{3,}@[a-zA-Z0-9]{2,}\.(com|org)\.?(br)?$" title="Digite um email válido, que tenha .com ou .org.br">
                 </div>
                 <div>
                     <label for="">Senha</label>
-                    <input type="password" placeholder="Digite sua senha">
+                    <input type="password" name="senha" placeholder="Digite sua senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="A senha deve ter: - 8 dígitos - 1 letra maiúscula e minúscula - 1 número - 1 caractere especial">
                     <p id="esqueceu-senha">Esqueceu a senha? <a href="pages/esqueceuSenha.html">Crie uma nova</a></p>
                 </div>
                 <button type="submit">Entrar</button>
             </form>
-            <p>Aluno novo? <a href="pages/cadastroAluno.html">Crie uma conta</a></p>
+            <p id="linkConta">Aluno novo? <a href="pages/verificarAluno.html">Crie uma conta</a></p>
         </div>
     </main>
     <script src="scripts/scriptIndex.js"></script>

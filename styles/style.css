@@ -48,6 +48,9 @@ label {
     width: fit-content;
     z-index: 1;
 }
+form button {
+    margin-top: 20px;
+}
 form div {
     margin: 40px 0px;
 }
