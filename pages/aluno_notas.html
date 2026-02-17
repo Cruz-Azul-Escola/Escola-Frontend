@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../styles/styleAlunoNotas.css">
+  <title>Cruz Azul - Portal do Aluno</title>
+</head>
+
+<body>
+  <header class="barra-topo">
+    <div class="marca">
+      <div class="logo">
+        <img src="../assets/icons/Logo da escola.png" alt="Logo da escola">
+      </div>
+
+      <div class="marca-texto">
+        <div class="marca-titulo">Cruz Azul</div>
+        <div class="marca-subtitulo">Portal do Aluno</div>
+      </div>
+    </div>
+
+    <a href="../index.html" class="botao-sair">
+      <img src="../assets/icons/voltar.png" alt="">
+      Sair
+    </a>
+  </header>
+
+  <main class="container">
+    <section class="cartao">
+      <div class="cabecalho-boasvindas">
+        <div>Bem-vindo, Aluno!</div>
+        <div>Matrícula: <span>12345</span></div>
+      </div>
+
+      <div class="corpo-boasvindas">
+        <div class="estatisticas">
+          <div class="estatistica">
+            <div class="rotulo">Média Geral</div>
+            <div class="valor">9.5</div>
+          </div>
+
+          <div class="estatistica">
+            <div class="rotulo">Disciplinas</div>
+            <div class="valor">10</div>
+          </div>
+
+          <div class="estatistica">
+            <div class="rotulo">Observações</div>
+            <div class="valor">1</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="espacador"></div>
+
+    <section class="cartao boletim">
+      <div class="topo-boletim">
+        <div>
+          <h2>Boletim Escolar</h2>
+          <p>Visualize suas notas e observações</p>
+        </div>
+
+        <button class="botao-pdf">⬇ Baixar PDF</button>
+      </div>
+
+      <div class="abas">
+        <a class="aba ativa">Notas</a>
+        <a href="aluno_observacoes.html" class="aba">Observações</a>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Disciplina</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <th>Média</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Matemática</td>
+            <td>10.0</td>
+            <td>9.0</td>
+            <td>9.5</td>
+            <td><span class="status aprovado">Aprovado</span></td>
+          </tr>
+
+          <tr>
+            <td>Português</td>
+            <td>7.5</td>
+            <td>6.5</td>
+            <td>7.0</td>
+            <td><span class="status recuperacao">Recuperação</span></td>
+          </tr>
+
+          <tr>
+            <td>Filosofia</td>
+            <td>7</td>
+            <td>0</td>
+            <td>7</td>
+            <td><span class="status reprovado">Recuperação</span></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
