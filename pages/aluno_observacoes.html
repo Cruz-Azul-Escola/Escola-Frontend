@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/Escola-Frontend/styles/styleAlunoObservacoes.css">
+  <title>Cruz Azul - Portal do Aluno</title>
+</head>
+
+<body>
+  <header class="barra-topo">
+    <div class="marca">
+      <div class="logo">
+        <img src="/Escola-Frontend/assets/icons/Logo da escola.png" alt="Logo da escola">
+      </div>
+
+      <div class="marca-texto">
+        <div class="marca-titulo">Cruz Azul</div>
+        <div class="marca-subtitulo">Portal do Aluno</div>
+      </div>
+    </div>
+
+    <a href="/Escola-Frontend/index.html" class="botao-sair">
+      <img src="/Escola-Frontend/assets/icons/voltar.png" alt="">
+      Sair
+    </a>
+  </header>
+
+  <main class="container">
+
+    <section class="cartao">
+      <div class="cabecalho-boasvindas">
+        <div>Bem-vindo, Aluno!</div>
+        <div>Matrícula: <span id="matricula">12345</span></div>
+      </div>
+
+      <div class="corpo-boasvindas">
+        <div class="estatisticas">
+          <div class="estatistica">
+            <div class="rotulo">Média Geral</div>
+            <div class="valor" id="mediaGeral">9.5</div>
+          </div>
+
+          <div class="estatistica">
+            <div class="rotulo">Disciplinas</div>
+            <div class="valor" id="qtdDisciplinas">10</div>
+          </div>
+
+          <div class="estatistica">
+            <div class="rotulo">Observações</div>
+            <div class="valor" id="qtdObservacoes">1</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="espacador"></div>
+
+    <section class="cartao boletim">
+      <div class="topo-boletim">
+        <div>
+          <h2>Boletim Escolar</h2>
+          <p>Visualize suas notas e observações</p>
+        </div>
+
+        <button class="botao-pdf">⬇ Baixar PDF</button>
+      </div>
+
+      <div class="abas">
+        <a href="aluno_notas.html" class="aba">Notas</a>
+        <a class="aba ativa">Observações</a>
+      </div>
+
+
+      <div class="area-conteudo">
+
+
+        <article class="card-observacao">
+          <div class="barra-lateral"></div>
+
+          <div class="observacao-conteudo">
+            <div class="observacao-topo">
+              <div class="disciplina">Matemática</div>
+              <div class="professor">Professor(a): Ana Souza</div>
+            </div>
+
+            <div class="observacao-texto">
+              Longa e chata observação que estou com preguiça de escrever
+            </div>
+          </div>
+        </article>
+
+
+        <article class="card-observacao">
+          <div class="barra-lateral"></div>
+
+          <div class="observacao-conteudo">
+            <div class="observacao-topo">
+              <div class="disciplina">Matemática</div>
+              <div class="professor">Professor(a): Ana Souza</div>
+            </div>
+
+            <div class="observacao-texto">
+              Longa e chata observação que estou com preguiça de escrever
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
