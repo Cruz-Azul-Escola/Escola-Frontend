@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/styleDadosCadastrais.css">
-    <link rel="stylesheet" href="../styles/styleContaAluno.css">
+    <link rel="stylesheet" href="../styles/styleAlterarSenha.css">
     <link rel="shortcut icon" href="../assets/icons/Logo da escola.png" type="image/x-icon">
-    <title>Cruz Azul - Criar Conta</title>
+    <title>Cruz Azul - Alterar Senha</title>
 </head>
 <body>
     <header>
@@ -26,25 +26,17 @@
     </header>
     <main>
         <div>
-            <h2>Conta do Aluno</h2>
-            <h5>Estudante, certifique que seu nome esteja correto e preencha os campos</h5>
+            <h2>Alterar Senha</h2>
+            <h5>Crie uma nova senha para sua conta</h5>
         </div>
         <div id="container">
-            <img src="../assets/images/logo de conta.png" alt="">
-            <h2>Crie sua Conta</h2>
+            <img src="../assets/images/logo de alterar senha.png" alt="">
+            <h2>Altere sua senha</h2>
             <form>
-                <div>
-                    <label for="">Nome</label>
-                    <input type="text" name="nome" placeholder="Digite seu nome" required pattern="^[A-Z][a-z]{1,} [A-Za-z][A-Za-z ]*$" title="Digite seu nome completo, começando com letra maiúscula">
-                </div>
-                <div>
-                    <label for="">Email</label>
-                    <input type="text" name="email" placeholder="Digite seu email" required pattern="^[a-zA-Z0-9\._]{3,}@[a-zA-Z0-9]{2,}\.(com|org)\.?(br)?$" title="Digite um email válido, que tenha .com ou .org.br">
-                </div>
                 <div id="campo-senha">
                     <section>
                         <label for="">Senha</label>
-                        <input type="password" name="senha" placeholder="Digite uma senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="A senha deve ter: - 8 dígitos - 1 letra maiúscula e minúscula - 1 número - 1 caractere especial">
+                        <input type="password" name="senha" placeholder="Digite uma nova senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="A senha deve ter: - 8 dígitos - 1 letra maiúscula e minúscula - 1 número - 1 caractere especial">
                     </section>
                     <section>
                         <div id="popUp">
@@ -64,10 +56,10 @@
                     </section>
                 </div>
                 <div>
-                    <label for="">Senha</label>
-                    <input type="password" name="senha" placeholder="Digite uma senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="A senha deve ter: - 8 dígitos - 1 letra maiúscula e minúscula - 1 número - 1 caractere especial">
+                    <label for="">Confirme a Senha</label>
+                    <input type="password" name="confirmarSenha" placeholder="Confirme sua senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="A senha deve ter: - 8 dígitos - 1 letra maiúscula e minúscula - 1 número - 1 caractere especial">
                 </div>
-                <button type="submit" class="confirmar">Criar Conta</button>
+                <button type="submit" class="confirmar">Alterar Senha</button>
             </form>
         </div>
     </main>

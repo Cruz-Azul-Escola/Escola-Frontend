@@ -7,17 +7,6 @@
     --tamanho22px: 22px;
     --tamanho36px: 36px;
 }
-header {
-    color: white;
-    background-color: var(--corAzul);
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-}
-header img {
-    margin-left: 25px;
-    width: 80px;
-}
 main {
     padding-top: 30px;
     height: 97.8%;
@@ -29,9 +18,7 @@ main img {
 }
 h1 {
     margin: 0;
-    margin-bottom: -5px;
     font-size: var(--tamanho36px);
-    text-align: center;
 }
 h2, h5 {
     color: var(--corAzul);
@@ -57,6 +44,7 @@ main > div:nth-child(1) {
 }
 #container {
     transition: 0.5s;
+    padding-top: 20px;
     display: block;
     border-radius: 100px 100px 100px 100px;
     margin: 0 auto;
