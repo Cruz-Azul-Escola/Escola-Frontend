@@ -7,17 +7,6 @@
     --tamanho22px: 22px;
     --tamanho36px: 36px;
 }
-header {
-    color: white;
-    background-color: var(--corAzul);
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-}
-header img {
-    margin-left: 25px;
-    width: 80px;
-}
 main {
     padding-top: 30px;
     height: 97.7%;
@@ -51,11 +40,11 @@ h2 {
     width: 163px;
     border: 0px;
     box-shadow: 0px 0px 0px transparent;
-    transition: 0.5s;
     font-size: var(--tamanho36px);
 }
 #container {
     transition: 0.5s;
+    padding-top: 20px;
     display: block;
     border-radius: 100px 100px 100px 100px;
     margin: 0 auto;

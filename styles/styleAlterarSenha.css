@@ -12,7 +12,7 @@ main {
     height: 97.8%;
     text-align: center;
 }
-main img {
+main > #container > img {
     width: 100px;
     height: 100px;
 }
@@ -52,15 +52,13 @@ main > div:nth-child(1) {
     background-color: white;
     width: 80%;
     max-width: 900px;
-    height: 80%;
+    height: 85%;
+    padding-top: 20px;
 }
 #container button {
     width: 50%;
     margin-bottom: 10px;
     font-size: var(--tamanho16px);
-}
-#container img {
-    margin-top: 20px;
 }
 a {
     color: var(--corLaranja);

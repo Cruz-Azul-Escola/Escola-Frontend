@@ -14,12 +14,14 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="assets/icons/Logo da escola.png" alt="">
-        </div>
-        <div>
-            <h1><button id="button-area-restrita">Cruz Azul</button></h1>
-            <h4>Portal do Aluno</h4>
+        <div id="logotipo">
+            <div>
+                <img src="../assets/icons/Logo da escola.png" alt="">
+            </div>
+            <div>
+                <button id="button-area-restrita"><h1>Cruz Azul</h1></button>
+                <h4>Portal do Aluno</h4>
+            </div>
         </div>
     </header>
     <main>
@@ -35,9 +37,9 @@
                 <div>
                     <label for="">Senha</label>
                     <input type="password" name="senha" placeholder="Digite sua senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="A senha deve ter: - 8 dígitos - 1 letra maiúscula e minúscula - 1 número - 1 caractere especial">
-                    <p id="esqueceu-senha">Esqueceu a senha? <a href="pages/esqueceuSenha.html">Crie uma nova</a></p>
+                    <p id="esqueceu-senha">Esqueceu a senha? <a href="pages/redefinirSenha.html">Crie uma nova</a></p>
                 </div>
-                <button type="submit">Entrar</button>
+                <button type="submit" class="confirmar">Entrar</button>
             </form>
             <p id="linkConta">Aluno novo? <a href="pages/verificarAluno.html">Crie uma conta</a></p>
         </div>

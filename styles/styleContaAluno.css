@@ -7,23 +7,12 @@
     --tamanho22px: 22px;
     --tamanho36px: 36px;
 }
-header {
-    color: white;
-    background-color: var(--corAzul);
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-}
-header img {
-    margin-left: 25px;
-    width: 80px;
-}
 main {
     padding-top: 30px;
     height: 97.8%;
     text-align: center;
 }
-main > #container > img {
+#container > img {
     width: 100px;
     height: 100px;
 }
@@ -56,6 +45,7 @@ main > div:nth-child(1) {
     font-size: var(--tamanho36px);
 }
 #container {
+    padding-top: 20px;
     transition: 0.5s;
     display: block;
     border-radius: 100px 100px 100px 100px;
@@ -63,7 +53,8 @@ main > div:nth-child(1) {
     background-color: white;
     width: 80%;
     max-width: 900px;
-    height: 85%;
+    height: fit-content;
+    padding-bottom: 20px;
 }
 #container button {
     width: 50%;
@@ -80,7 +71,6 @@ a {
 
 @media(max-width: 1300px) {
     #container {
-        height: 89%;
         width: 90%;
         margin: 0;
         margin-left: auto;
@@ -89,16 +79,9 @@ a {
 }
 @media(max-width: 850px) {
     #container {
-        height: 89%;
         width: 100%;
         margin: 0;
         margin-left: auto;
         border-radius: 0px 0px 0px 0px;
-    }
-}
-
-@media(max-height: 700px) {
-    #container {
-        height: fit-content;
     }
 }
