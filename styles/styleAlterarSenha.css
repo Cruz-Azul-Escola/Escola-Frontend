@@ -18,9 +18,7 @@ main > #container > img {
 }
 h1 {
     margin: 0;
-    margin-bottom: -5px;
     font-size: var(--tamanho36px);
-    text-align: center;
 }
 h2, h5 {
     color: var(--corAzul);
