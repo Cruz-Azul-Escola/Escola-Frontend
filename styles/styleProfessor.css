@@ -193,8 +193,17 @@ form button img {
 }
 
 iframe {
+  display: none;
   position: fixed;
-  background-color: #F5B800;
+  z-index: 10;
+  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 40%;
+  background-color: white;
+  border-radius: 15px;
 }
 
 @media (max-width: 760px){
