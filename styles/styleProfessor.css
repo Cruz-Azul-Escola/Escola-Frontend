@@ -1,0 +1,118 @@
+:root{
+  --corAzulSaturada: #E8F0FE;
+  --corAmareloSaturado:#FFEDB8;
+  --corAzul: #0E4194;
+  --corAmarelo: #F5B800;
+  --corLaranja: #FF8000;
+  --tamanho16px: 16px;
+  --tamanho22px: 22px;
+  --tamanho36px: 36px;
+}
+
+.logo{
+  width:38px;
+  height:38px;
+  border-radius:999px;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.logo img{
+  width:70%;
+  height:auto;
+  object-fit:contain;
+}
+
+.botao-sair{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  text-decoration:none;
+
+  background:#fff;
+  color:var(--corAzul);
+  border:0;
+  padding:10px 14px;
+  border-radius:12px;
+
+  font-weight:700;
+  cursor:pointer;
+}
+
+.botao-sair img{
+  width:18px;
+  height:18px;
+  object-fit:contain;
+}
+
+.container{
+  max-width:980px;       
+  margin:0 auto;
+  padding:28px 18px 60px; 
+}
+
+.cartao{
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 26px rgba(10,40,90,.06);
+  overflow:hidden;
+  margin-bottom: 18px;
+}
+
+.cabecalho-boasvindas{
+  background:var(--corAzul);
+  color:#fff;
+  padding:12px 18px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-weight:800;
+}
+
+.informacoes-gerais{
+  padding:18px 18px 20px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;     
+}
+
+.estatistica{
+  background:var(--corAzulSaturada);
+  border-radius:14px;
+  padding:14px 12px;      
+  text-align:center;
+  border:1px solid rgba(216,227,246,.95);
+}
+
+.rotulo{
+  font-weight:700;
+  color:var(--corAzul);
+  font-size:11px;         
+  margin-bottom:8px;      
+}
+
+.valor{
+  font-size:34px;        
+  font-weight:600;
+  color:var(--corAzul);
+  line-height:1;
+}
+
+.estatistica:nth-child(2) {
+    background:var(--corAmareloSaturado);
+    border-radius:14px;
+    padding:14px 12px;      
+    text-align:center;
+    border:1px solid var(--corAmarelo);
+}
+.estatistica:nth-child(2) div:nth-child(2) {
+    font-size: var(--tamanho22px);
+}
+
+@media (max-width: 760px){
+  .container{ padding:20px 14px 50px; }
+  .informacoes-gerais{ grid-template-columns:1fr; }
+}
