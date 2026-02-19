@@ -126,8 +126,23 @@
         </div>
     </section>
   </main>
-  <iframe id="notas" src="pages/popup-notas.html"></iframe>
-  <iframe id="observacoes" src="pages/popup-observacoes.html"></iframe>
+
+  <iframe id="notas" src="popup-notas.html"></iframe>
+  <iframe id="observacoes" src="popup-observacoes.html"></iframe>
+
+
+  <script>
+  const notas = document.getElementById("notas");
+  const obs = document.getElementById("observacoes");
+
+  document.getElementById("btn-notas").onclick = () => {
+    notas.style.display = "block";
+  };
+
+  document.getElementById("btn-observacoes").onclick = () => {
+    obs.style.display = "block";
+  };
+</script>
 
 </body>
 </html>
