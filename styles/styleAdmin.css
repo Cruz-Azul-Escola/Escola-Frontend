@@ -1,83 +1,12 @@
 :root {
-  --azul-escuro: #0A3D91;
-  --azul: #0D4DB8;
-  --azul-claro: #EAF2FF;
-  --branco: #FFFFFF;
-  --borda: #D6E3FF;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background: var(--azul-claro);
-  min-height: 100vh;
-}
-
-/* ===== TOPBAR ===== */
-.topbar {
-  height: 64px;
-  background: var(--azul);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 32px;
-}
-
-.topbar-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: white;
-  color: var(--azul);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-}
-
-.logo-text h1 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.logo-text p {
-  font-size: 13px;
-  opacity: 0.9;
-}
-
-.topbar img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.btn-sair {
-  background: white;
-  color: var(--azul);
-  padding: 8px 16px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.btn-sair img {
-  width: 16px;
-  height: 16px;
+    --corAzul: #0E4194;
+    --corAzulSaturada: #E8F0FE;
+    --corAmarelo: #F5B800;
+    --corLaranja: #FF8000;
+    --borda: #D6E3FF;
+    --tamanho16px: 16px;
+    --tamanho22px: 22px;
+    --tamanho36px: 36px;
 }
 
 /* ===== MAIN ===== */
@@ -96,7 +25,7 @@ body {
 }
 
 .welcome-banner {
-  background: var(--azul);
+  background: var(--corAzul);
   color: white;
   height: 48px;
   border-radius: 10px;
@@ -118,10 +47,11 @@ body {
 }
 
 .toolbar button {
-  background: var(--azul);
+  background: var(--corAzul);
+  width: 20%;
   color: white;
   border: none;
-  padding: 8px 22px;
+  padding: 8px 1%;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
@@ -130,7 +60,7 @@ body {
 .toolbar input {
   flex: 1;
   height: 36px;
-  border: 2px solid var(--azul);
+  border: 2px solid var(--corAzul);
   border-radius: 8px;
   padding: 0 12px;
 }
