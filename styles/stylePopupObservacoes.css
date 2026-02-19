@@ -10,7 +10,6 @@ body {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.35);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,4 +51,13 @@ button {
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
+}
+
+#cabecalho-iframe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cabecalho-iframe button {
+  width: 50px;
 }

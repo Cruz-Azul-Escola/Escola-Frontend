@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/styleProfessor.css">
   <link rel="shortcut icon" href="../assets/icons/Logo da escola.png" type="image/x-icon">
+  <script defer src="../scripts/scriptAbrirIframe.js"></script>
   <title>Cruz Azul - Portal do Professor</title>
 </head>
 
 <body>
-  <header>
+  <header id="cabecalho-site">
     <div id="logotipo">
       <div>
           <img src="../assets/icons/Logo da escola.png" alt="">
@@ -31,7 +32,7 @@
     </a>
   </header>
 
-  <main class="container">
+  <main class="container" id="secao-principal">
     <section class="cartao">
       <div class="cabecalho-boasvindas">
         <h3>Bem-vindo, Professor!</h3>
@@ -127,22 +128,7 @@
     </section>
   </main>
 
-  <iframe id="notas" src="popup-notas.html"></iframe>
-  <iframe id="observacoes" src="popup-observacoes.html"></iframe>
-
-
-  <script>
-  const notas = document.getElementById("notas");
-  const obs = document.getElementById("observacoes");
-
-  document.getElementById("btn-notas").onclick = () => {
-    notas.style.display = "block";
-  };
-
-  document.getElementById("btn-observacoes").onclick = () => {
-    obs.style.display = "block";
-  };
-</script>
-
+  <iframe id="notas" src="popupNotas.html"></iframe>
+  <iframe id="observacoes" src="popupObservacoes.html"></iframe>
 </body>
 </html>
