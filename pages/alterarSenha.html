@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../styles/styleDadosCadastrais.css">
     <link rel="stylesheet" href="../styles/styleAlterarSenha.css">
     <link rel="shortcut icon" href="../assets/icons/Logo da escola.png" type="image/x-icon">
+    <script defer src="../scripts/scriptSenhaConfirmacao.js"></script>
     <title>Cruz Azul - Alterar Senha</title>
 </head>
 <body>
@@ -32,11 +33,11 @@
         <div id="container">
             <img src="../assets/images/logo de alterar senha.png" alt="">
             <h2>Altere sua senha</h2>
-            <form>
+            <form id="formulario">
                 <div id="campo-senha">
                     <section>
                         <label for="">Senha</label>
-                        <input type="password" name="senha" placeholder="Digite uma nova senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="A senha deve ter: - 8 dígitos - 1 letra maiúscula e minúscula - 1 número - 1 caractere especial">
+                        <input id="senha" type="password" name="senha" placeholder="Digite uma nova senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="A senha deve ter: - 8 dígitos - 1 letra maiúscula e minúscula - 1 número - 1 caractere especial">
                     </section>
                     <section>
                         <div id="popUp">
@@ -57,7 +58,7 @@
                 </div>
                 <div>
                     <label for="">Confirme a Senha</label>
-                    <input type="password" name="confirmarSenha" placeholder="Confirme sua senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="A senha deve ter: - 8 dígitos - 1 letra maiúscula e minúscula - 1 número - 1 caractere especial">
+                    <input id="confirmacaoSenha" type="password" name="confirmarSenha" placeholder="Confirme sua senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="A senha deve ter: - 8 dígitos - 1 letra maiúscula e minúscula - 1 número - 1 caractere especial">
                 </div>
                 <button type="submit" class="confirmar">Alterar Senha</button>
             </form>
