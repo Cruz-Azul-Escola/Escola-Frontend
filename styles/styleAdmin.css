@@ -1,0 +1,74 @@
+:root {
+    --corAzul: #0E4194;
+    --corAzulSaturada: #E8F0FE;
+    --corAmarelo: #F5B800;
+    --corLaranja: #FF8000;
+    --borda: #D6E3FF;
+    --tamanho16px: 16px;
+    --tamanho22px: 22px;
+    --tamanho36px: 36px;
+}
+
+/* ===== MAIN ===== */
+.admin-main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* ===== WELCOME ===== */
+.welcome-card {
+  background: white;
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 8px;
+}
+
+.welcome-banner {
+  background: var(--corAzul);
+  color: white;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+/* ===== TOOLBAR ===== */
+.toolbar {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 6px;
+  border-radius: 0 0 16px 16px;
+  margin-bottom: 20px;
+}
+
+.toolbar button {
+  background: var(--corAzul);
+  width: 20%;
+  color: white;
+  border: none;
+  padding: 8px 1%;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toolbar input {
+  flex: 1;
+  height: 36px;
+  border: 2px solid var(--corAzul);
+  border-radius: 8px;
+  padding: 0 12px;
+}
+
+/* ===== CONTENT ===== */
+.content-panel {
+  background: white;
+  height: 420px;
+  border-radius: 20px;
+  border: 2px solid var(--borda);
+}
