@@ -209,6 +209,9 @@ iframe {
 @media (max-width: 760px){
   .container{ padding:20px 14px 50px; }
   .informacoes-gerais{ grid-template-columns:1fr; }
+  form { flex-direction: column; }
+  form div { margin: auto; width: 100%; }
+  form button { width: 100%; }
   #formula-nota{ grid-template-columns: 1fr; gap: 20px; }
   #opcoes-edicao{ flex-direction: column; }
   #opcoes-edicao button { width: 100%; }

@@ -65,8 +65,17 @@
       </div>
       <form>
         <div>
-          <label id="label-nome-aluno" for="">Nome do Aluno</label>
-          <input id="input-nome-aluno" name="nome-aluno" type="text">
+          <label for="">Turma</label>
+          <input name="turma" type="text" list="turmas">
+          <datalist id="turmas">
+            <option value="Turma 1">Turma 1</option>
+            <option value="Turma 2">Turma 2</option>
+            <option value="Turma 3">Turma 3</option>
+          </datalist>
+        </div>
+        <div>
+          <label for="">Nome do Aluno</label>
+          <input name="nome-aluno" type="text">
         </div>
         <button type="submit">
           <img src="../assets/icons/lupa branca.png" alt="">
