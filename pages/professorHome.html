@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/styleProfessor.css">
+  <link rel="shortcut icon" href="../assets/icons/Logo da escola.png" type="image/x-icon">
+  <script defer src="../scripts/scriptAbrirIframe.js"></script>
+  <title>Cruz Azul - Portal do Professor</title>
+</head>
+
+<body>
+  <header id="cabecalho-site">
+    <div id="logotipo">
+      <div>
+          <img src="../assets/icons/Logo da escola.png" alt="">
+      </div>
+      <div>
+          <h1>Cruz Azul</h1>
+          <h4>Portal do Professor</h4>
+      </div>
+    </div>
+    <a href="../index.html">
+      <div id="voltar">
+          <img src="../assets/icons/voltar.png" alt="">
+          <h4>Sair</h4>
+      </div>
+    </a>
+  </header>
+
+  <main class="container" id="secao-principal">
+    <section class="cartao">
+      <div class="cabecalho-boasvindas">
+        <h3>Bem-vindo, Professor!</h3>
+        <h4>Usuário: <span>professor@gmail.com</span></h4>
+      </div>
+
+      <div class="informacoes-gerais">
+        <div class="dados">
+            <div class="rotulo">Total de Alunos</div>
+            <div class="valor">10</div>
+        </div>
+
+        <div class="dados">
+          <div class="rotulo">Disciplinas</div>
+          <select id="opcoes-disciplina" class="valor">
+            <option value="Disciplina 1">Disciplina 1</option>
+            <option value="Disciplina 2">Disciplina 2</option>
+            <option value="Disciplina 3">Disciplina 3</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="cartao">
+      <div id="cabecalho-busca">
+        <div id="titulo-busca">
+          <img src="../assets/icons/lupa azul.png" alt="">
+          <h3>Buscar Aluno</h3>
+        </div>
+        <p>Digite o nome do aluno para visualizar e editar informações</p>
+      </div>
+      <form>
+        <div>
+          <label for="">Turma</label>
+          <input name="turma" type="text" list="turmas">
+          <datalist id="turmas">
+            <option value="Turma 1">Turma 1</option>
+            <option value="Turma 2">Turma 2</option>
+            <option value="Turma 3">Turma 3</option>
+          </datalist>
+        </div>
+        <div>
+          <label for="">Nome do Aluno</label>
+          <input name="nome-aluno" type="text">
+        </div>
+        <button type="submit">
+          <img src="../assets/icons/lupa branca.png" alt="">
+          <p>Buscar</p>
+        </button>
+      </form>
+    </section>
+
+    <section class="cartao">
+      <div id="cabecalho-info-aluno">
+        <h3>Informações do Aluno</h3>
+        <p>Digite o nome do aluno para visualizar e editar informações</p>
+      </div>
+      <div id="info-aluno">
+        <div>
+          <h5>Nome</h5>
+          <h3>Aluno sei lá</h3>
+        </div>
+        <div>
+          <h5>Matrícula</h5>
+          <h3>123456</h3>
+        </div>
+        <div>
+          <h5>E-mail<h5>
+          <h3><a href="mailto:">aluno.sei.la@gmail.com</a></h3>
+        </div>
+      </div>
+      <div id="notas-lancadas">
+        <h3>Notas Lançadas</h3>
+        <div id="formula-nota">
+          <div>
+            <h3>Nota 1</h3>
+            <h1>10.0</h1>
+          </div>
+          <div>
+            <h3>Nota 2</h3>
+            <h1>9.5</h1>
+          </div>
+          <div>
+            <h3>Média</h3>
+            <h1>9.75</h1>
+          </div>
+        </div>
+      </div>
+        <div id="opcoes-edicao">
+          <button id="btn-notas">Lançar/Editar Notas</button>
+          <button id="btn-observacoes">Fazer/Editar Observação</button>
+        </div>
+    </section>
+  </main>
+
+  <iframe id="notas" src="popupNotas.html"></iframe>
+  <iframe id="observacoes" src="popupObservacoes.html"></iframe>
+</body>
+</html>
