@@ -117,7 +117,23 @@ form button {
   width: 100%;
 }
 
-
+.tabela {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.tabela th, .tabela td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid var(--corAzul);
+}
+.tabela th {
+  background: #E9F1FF;
+  font-weight: 600;
+}
+.tabela tbody tr:nth-child(even) {
+  background: var(--corAzul);
+  color: white;
+}
 
 @media (max-width: 760px) {
   #toolbar {
@@ -126,33 +142,4 @@ form button {
   #toolbar button {
     width: 100%;
   }
-}
-
-
-.tabela-professor,
-.tabela-disciplina{
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-
-.tabela-professor th,
-.tabela-professor td,
-.tabela-disciplina th,
-.tabela-disciplina td{
-  padding: 10px;
-  text-align: center;
-  border: 1px solid var(--corAzul);
-}
-
-.tabela-professor thead th,
-.tabela-disciplina thead th{
-  background: #E9F1FF;
-  font-weight: 600;
-}
-
-.tabela-professor tbody tr:nth-child(even),
-.tabela-disciplina tbody tr:nth-child(even){
-  background: var(--corAzul);
-  color: white;
 }
