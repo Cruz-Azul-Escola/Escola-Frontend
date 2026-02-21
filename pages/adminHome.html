@@ -81,6 +81,141 @@
 
       <div id="secao-professor" class="secoes">
 
+        <h2>Fazer Cadastro</h2>
+
+        <form method="post" action="admin">
+          <input type="hidden" name="entidade" value="professor">
+          <input type="hidden" name="acao" value="criar">
+
+          <div>
+            <label for="prof-nome">Nome</label>
+            <input id="prof-nome" type="text" name="nome" placeholder="placeholder" required>
+          </div>
+
+          <div>
+            <label for="prof-email">Email</label>
+            <input id="prof-email" type="email" name="email" placeholder="placeholder" required>
+          </div>
+
+          <div>
+            <label for="prof-ativo">ativo</label>
+            <input id="prof-ativo" type="text" name="ativo" placeholder="placeholder" required>
+          </div>
+
+          <div>
+            <label for="prof-disciplinas">Disciplinas</label>
+            <input id="prof-disciplinas" type="text" name="disciplinas" placeholder="placeholder" required>
+          </div>
+
+          <button type="submit" class="confirmar">Salvar</button>
+        </form>
+
+        <hr>
+
+        <h3>Cadastros</h3>
+
+        <table border="1" cellpadding="5" class="tabela-professor">
+          <thead>
+            <tr>
+              <th style="width:70px;">ID</th>
+              <th>Nome</th>
+              <th>Email</th>
+              <th style="width:90px;">Ativo</th>
+              <th>Disciplinas</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>1</td>
+              <td>Ana Souza</td>
+              <td>ana@cruzazul.com</td>
+              <td>Sim</td>
+              <td>Matemática</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Bruno Lima</td>
+              <td>bruno@cruzazul.com</td>
+              <td>Não</td>
+              <td>Português</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Marcos Soares</td>
+              <td>marcaodeosasco@cruzazul.com</td>
+              <td>Sim</td>
+              <td>Fisica</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Alterar</h3>
+
+        <form method="post" action="admin">
+          <input type="hidden" name="entidade" value="professor">
+          <input type="hidden" name="acao" value="alterar">
+
+          <div>
+            <label for="alt-id">ID</label>
+            <input id="alt-id" type="number" name="id" placeholder="placeholder" required>
+          </div>
+
+          <div>
+            <label for="alt-nome">Nome</label>
+            <input id="alt-nome" type="text" name="nome" placeholder="placeholder">
+          </div>
+
+          <div>
+            <label for="alt-email">Email</label>
+            <input id="alt-email" type="email" name="email" placeholder="placeholder">
+          </div>
+
+          <div>
+            <label for="alt-senha">Senha</label>
+            <input id="alt-senha" type="text" name="Senha" placeholder="placeholder">
+          </div>
+
+          <div>
+            <label for="alt-turmas">Turmas</label>
+              <select id="alt-turmas" name="turmas" required>
+                <option value="">Selecione a turma</option>
+                <option value="1">2º Ano J</option>
+                <option value="2">2º Ano E</option>
+                <option value="3">2º Ano F</option>
+              </select>
+            
+          </div>
+
+          <button type="submit" class="confirmar">Salvar</button>
+        </form>
+
+        <hr>
+
+        <h3>Excluir</h3>
+
+        <form method="post" action="admin">
+          <input type="hidden" name="entidade" value="professor">
+          <input type="hidden" name="acao" value="excluir">
+
+          <div>
+            <label for="exc-id">ID</label>
+            <input id="exc-id" type="number" name="id" placeholder="Digite o ID para excluir" required>
+          </div>
+
+          <div>
+            <label for="exc-conf">Confirmação</label>
+            <input id="exc-conf" type="number" name="confirmacao" placeholder="Confirme o ID" required>
+          </div>
+
+          <button type="submit" class="confirmar">Excluir</button>
+        </form>
+
       </div>
 
       <div id="secao-turma" class="secoes">
@@ -88,6 +223,100 @@
       </div>
 
       <div id="secao-disciplina" class="secoes">
+        <h2>Fazer Cadastro</h2>
+
+        <form method="post" action="admin">
+          <input type="hidden" name="entidade" value="disciplina">
+          <input type="hidden" name="acao" value="criar">
+
+          <div>
+            <label for="disc-nome">Nome</label>
+            <input id="disc-nome" type="text" name="nome" placeholder="placeholder" required>
+          </div>
+
+          <div>
+            <label for="disc-carga">Carga Horaria</label>
+            <input id="disc-carga" type="text" name="cargaHoraria" placeholder="placeholder" required>
+          </div>
+
+          <button type="submit" class="confirmar">Salvar</button>
+        </form>
+
+        <hr>
+
+        <h3>Cadastros</h3>
+
+        <table border="1" cellpadding="5" class="tabela-disciplina">
+          <thead>
+            <tr>
+              <th style="width:80px;">ID</th>
+              <th>Nome</th>
+              <th>Carga Horaria</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Matemática</td>
+              <td>80h</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Português</td>
+              <td>60h</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Alterar</h3>
+
+        <form method="post" action="admin">
+          <input type="hidden" name="entidade" value="disciplina">
+          <input type="hidden" name="acao" value="alterar">
+
+          <div>
+            <label for="alt-disc-id">ID</label>
+            <input id="alt-disc-id" type="number" name="id" placeholder="placeholder" required>
+          </div>
+
+          <div>
+            <label for="alt-disc-nome">Nome</label>
+            <input id="alt-disc-nome" type="text" name="nome" placeholder="placeholder">
+          </div>
+
+          <div>
+            <label for="alt-disc-carga">Carga Horaria</label>
+            <input id="alt-disc-carga" type="text" name="cargaHoraria" placeholder="placeholder">
+          </div>
+
+          <button type="submit" class="confirmar">Salvar</button>
+        </form>
+
+        <hr>
+
+        <h3>Excluir</h3>
+
+        <form method="post" action="admin">
+          <input type="hidden" name="entidade" value="disciplina">
+          <input type="hidden" name="acao" value="excluir">
+
+          <div>
+            <label for="exc-disc-id">ID</label>
+            <input id="exc-disc-id" type="number" name="id" placeholder="Digite o ID para excluir" required>
+          </div>
+
+          <div>
+            <label for="exc-disc-conf">Confirmação</label>
+            <input id="exc-disc-conf" type="number" name="confirmacao" placeholder="Confirme o ID" required>
+          </div>
+
+          <button type="submit" class="confirmar">Excluir</button>
+        </form>
+
       </div>
 
       <div id="secao-sala" class="secoes">
