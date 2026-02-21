@@ -69,6 +69,21 @@
 .secoes {
   display: none;
 }
+hr {
+  margin: 40px 0px;
+}
+table {
+  width: 100%;
+  border-radius: 16px;
+  border: 2px solid var(--corAzul);
+  margin-bottom: 20px;
+}
+tr {
+  text-align: left;
+}
+th {
+  text-align: center;
+}
 form {
   display: grid;
   align-items: center;
@@ -79,16 +94,26 @@ form {
 form div {
   width: 100%;
   margin: 0;
-  margin-top: 10px;
 }
 form select {
+  padding: 0px 20px;
   width: 100%;
   height: 60px;
   border-radius: 60px;
   border: 2px solid black;
 }
+select:hover {
+    border: 2px solid var(--corAzul);
+    transition: 0.5s;
+}
+select:focus {
+    border: 2px solid var(--corLaranja);
+    outline: none;
+    transition: 0.5s;
+}
 form button {
   margin: 0;
+  margin-top: 15px;
   width: 100%;
 }
 
