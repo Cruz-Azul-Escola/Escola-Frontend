@@ -131,7 +131,81 @@
       </div>
 
       <div id="secao-turma" class="secoes">
+        <h2>Cadastro de Turma</h2>
+        <form method="post" action="admin">
+          <div>
+            <label for="">Disciplina</label>
+            <select name="idDisciplina" required>
+              <option value="">Selecione a Disciplina</option>
+              <option value="">Valor1</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Sala</label>
+            <select name="idDisciplina" required>
+              <option value="">Selecione a Sala</option>
+              <option value="">Valor1</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Período Letivo</label>
+            <input type="text" name="periodoLetivo" placeholder="Ex: 2026/1" required>
+          </div>
+          <button type="submit">Salvar</button>
+        </form>
+        <hr>
 
+        <h2>Turmas Cadastradas</h2>
+        <table cellpadding="5">
+            <tr>
+                <th>ID</th>
+                <th>Disciplina</th>
+                <th>Sala</th>
+                <th>Período Letivo</th>
+            </tr>
+        </table>
+        <hr>
+
+        <h2>Alterar Turma</h2>
+        <form method="post" action="admin">
+          <div>
+            <label for="">ID</label>
+            <input type="text" name="id" placeholder="Nome" required>
+          </div>
+          <div>
+            <label for="">Disciplina</label>
+            <select name="idDisciplina" required>
+              <option value="">Selecione a Disciplina</option>
+              <option value="">Valor1</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Sala</label>
+            <select name="idDisciplina" required>
+              <option value="">Selecione a Sala</option>
+              <option value="">Valor1</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Período Letivo</label>
+            <input type="text" name="periodoLetivo" placeholder="Ex: 2026/1" required>
+          </div>
+          <button type="submit">Salvar</button>
+        </form>
+        <hr>
+
+        <h2>Remover Turma</h2>
+        <form action="">
+          <div>
+              <label for="">ID</label>
+              <input type="text" name="id" placeholder="ID" required>
+            </div>
+            <div>
+              <label for="">Confirmação</label>
+              <input type="text" name="idConfirmacao" placeholder="Confirme o ID" required>
+            </div>
+            <button type="submit">Excluir</button>
+        </form>
       </div>
 
       <div id="secao-disciplina" class="secoes">
