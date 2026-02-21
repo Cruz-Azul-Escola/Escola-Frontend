@@ -30,53 +30,73 @@
       </div>
     </a>
   </header>
-  <main class="admin-main">
-    <section class="welcome-card">
-      <div class="welcome-banner">
+  <main id="admin-main">
+    <section id="welcome-card">
+      <div id="welcome-banner">
         Bem-vindo, Administrador!
       </div>
     </section>
-    <section class="toolbar">
-      <button id="view-cadastrar">Adicionar</button>
-      <button id="view-alterar">Alterar</button>
-      <button id="view-excluir">Remover</button>
-      <button id="view-visualizar">Visualizar</button>
-      <input type="text" placeholder="">
+    <section id="toolbar">
+      <button id="view-alunos">Alunos</button>
+      <button id="view-professores">Professores</button>
+      <button id="view-turmas">Turmas</button>
+      <button id="view-disciplinas">Disciplinas</button>
+      <button id="view-salas">Salas</button>
+      <button id="view-vinculacoes">Vinculações</button>
     </section>
-    <section class="content-panel">
-      <!-- Cadastro -->
-      <div id="campo-cadastrar" class="opcoes-selecao">
-        <button id="abrir-aluno-cadastrar" class="abrir-iframe">Adicionar Aluno</button>
-        <button id="abrir-professor-cadastrar" class="abrir-iframe">Adicionar Professor</button>
+    <section id="content-panel">
+      <!-- Seções -->
+      <div id="secao-aluno" class="secoes">
+        <h2>Cadastro de Aluno</h2>
+        <form method="post" action="admin">
+            <div>
+              <label for="">Nome</label>
+              <input type="text" name="nome" placeholder="Nome" required>
+            </div>
+            <div>
+              <label for="">CPF</label>
+              <input type="text" name="cpf" placeholder="CPF" required>
+            </div>
+            <div>
+              <select name="idSala" required>
+                <option value="">Selecione a Sala</option>
+                <option value="">Valor1</option>
+              </select>
+            </div>
+            <button type="submit">Salvar</button>
+        </form>
+        <hr>
+        <h3>Alunos Cadastrados</h3>
+
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Matrícula</th>
+                <th>Ações</th>
+            </tr>
+        </table>
       </div>
 
-      <!-- Alterar -->
-      <div id="campo-alterar" class="opcoes-selecao">
-        <button id="abrir-aluno-alterar" class="abrir-iframe">Alterar Aluno</button>
-        <button id="abrir-professor-alterar" class="abrir-iframe">Alterar Professor</button>
+      <div id="secao-professor" class="secoes">
+
       </div>
 
-      <!-- Excluir -->
-      <div id="campo-excluir" class="opcoes-selecao">
-        <button id="abrir-aluno-excluir" class="abrir-iframe">Excluir Aluno</button>
-        <button id="abrir-professor-excluir" class="abrir-iframe">Excluir Professor</button>
+      <div id="secao-turma" class="secoes">
+
       </div>
 
-      <!-- Visualizar -->
-      <div id="campo-visualizar" class="opcoes-selecao">
-        <button id="abrir-aluno-visualizar" class="abrir-iframe">Visualizar Alunos</button>
-        <button id="abrir-professor-visualizar" class="abrir-iframe">Visualizar Professores</button>
+      <div id="secao-disciplina" class="secoes">
       </div>
 
-      <!-- Iframes -->
-      <iframe id="cadastrar-aluno" src="" frameborder="0"></iframe>
-      <iframe id="alterar-aluno" src="" frameborder="0"></iframe>
-      <iframe id="exluir-aluno" src="" frameborder="0"></iframe>
-      <iframe id="visualizar-aluno" src="" frameborder="0"></iframe>
-      <iframe id="cadastrar-professor" src="" frameborder="0"></iframe>
-      <iframe id="alterar-professor" src="" frameborder="0"></iframe>
-      <iframe id="excluir-professor" src="" frameborder="0"></iframe>
-      <iframe id="visualizar-professor" src="" frameborder="0"></iframe>
+      <div id="secao-sala" class="secoes">
+
+      </div>
+
+      <div id="secao-vinculacao" class="secoes">
+        
+      </div>
     </section>
   </main>
 </body>

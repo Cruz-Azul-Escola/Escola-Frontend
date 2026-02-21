@@ -1,62 +1,65 @@
 // Abrir opções
-const abrirOpcaoAdicionar = document.getElementById("view-cadastrar");
-const abrirOpcaoAlterar = document.getElementById("view-alterar");
-const abrirOpcaoExcluir = document.getElementById("view-excluir");
-const abrirOpcaoVisualizar = document.getElementById("view-visualizar");
+const abrirAluno = document.getElementById("view-alunos");
+const abrirProfessor = document.getElementById("view-professores");
+const abrirTurma = document.getElementById("view-turmas");
+const abrirDisciplina = document.getElementById("view-disciplinas");
+const abrirSala = document.getElementById("view-salas");
+const abrirVinculacao = document.getElementById("view-vinculacoes");
 
-// Campos
-const campos = document.getElementsByClassName("opcoes-selecao");
-const campoAdicionar = document.getElementById("campo-cadastrar");
-const campoAlterar = document.getElementById("campo-alterar");
-const campoExcluir = document.getElementById("campo-excluir");
-const campoVisualizar = document.getElementById("campo-visualizar");
-
-// Abrir aluno
-const adicionarAluno = document.getElementById("abrir-aluno-cadastrar");
-const alterarAluno = document.getElementById("abrir-aluno-alterar");
-const excluirAluno = document.getElementById("abrir-aluno-excluir");
-const visualizarAluno = document.getElementById("abrir-aluno-visualizar");
-
-// Abrir professor
-const adicionarProfessor = document.getElementById("abrir-professor-cadastrar");
-const alterarProfessor = document.getElementById("abrir-professor-alterar");
-const excluirProfessor = document.getElementById("abrir-professor-excluir");
-const visualizarProfessor = document.getElementById("abrir-professor-visualizar");
+// Seções
+const secaoAluno = document.getElementById("secao-aluno");
+const secaoProfessor = document.getElementById("secao-professor");
+const secaoTurma = document.getElementById("secao-turma");
+const secaoDisciplina = document.getElementById("secao-disciplina");
+const secaoSala = document.getElementById("secao-sala");
+const secaoVinculacao = document.getElementById("secao-vinculacao");
 
 // Cliques
-abrirOpcaoAdicionar.addEventListener("click", () => {
-  for (i = 0; i < campos.length; i++) {
-    if (campos[i].style.display !== "none" && campoAdicionar != campos[i]) {
-      campos[i].style.display = "none";
-    } else {
-      campoAdicionar.style.display = "flex";
-    }
-  }
+abrirAluno.addEventListener("click", () => {
+  secaoAluno.style.display = "block";
+  secaoProfessor.style.display = "none";
+  secaoTurma.style.display = "none";
+  secaoDisciplina.style.display = "none";
+  secaoSala.style.display = "none";
+  secaoVinculacao.style.display = "none";
 });
-abrirOpcaoAlterar.addEventListener("click", () => {
-  for (i = 0; i < campos.length; i++) {
-    if (campos[i].style.display !== "none" && campoAlterar != campos[i]) {
-      campos[i].style.display = "none";
-    } else {
-      campoAlterar.style.display = "flex";
-    }
-  }
+abrirProfessor.addEventListener("click", () => {
+  secaoAluno.style.display = "none";
+  secaoProfessor.style.display = "block";
+  secaoTurma.style.display = "none";
+  secaoDisciplina.style.display = "none";
+  secaoSala.style.display = "none";
+  secaoVinculacao.style.display = "none";
 });
-abrirOpcaoExcluir.addEventListener("click", () => {
-  for (i = 0; i < campos.length; i++) {
-    if (campos[i].style.display !== "none" && campoExcluir != campos[i]) {
-      campos[i].style.display = "none";
-    } else {
-      campoExcluir.style.display = "flex";
-    }
-  }
+abrirTurma.addEventListener("click", () => {
+  secaoAluno.style.display = "none";
+  secaoProfessor.style.display = "none";
+  secaoTurma.style.display = "block";
+  secaoDisciplina.style.display = "none";
+  secaoSala.style.display = "none";
+  secaoVinculacao.style.display = "none";
 });
-abrirOpcaoVisualizar.addEventListener("click", () => {
-  for (i = 0; i < campos.length; i++) {
-    if (campos[i].style.display !== "none" && campoVisualizar != campos[i]) {
-      campos[i].style.display = "none";
-    } else {
-      campoVisualizar.style.display = "flex";
-    }
-  }
+abrirDisciplina.addEventListener("click", () => {
+  secaoAluno.style.display = "none";
+  secaoProfessor.style.display = "none";
+  secaoTurma.style.display = "none";
+  secaoDisciplina.style.display = "block";
+  secaoSala.style.display = "none";
+  secaoVinculacao.style.display = "none";
+});
+abrirSala.addEventListener("click", () => {
+  secaoAluno.style.display = "none";
+  secaoProfessor.style.display = "none";
+  secaoTurma.style.display = "none";
+  secaoDisciplina.style.display = "none";
+  secaoSala.style.display = "block";
+  secaoVinculacao.style.display = "none";
+});
+abrirVinculacao.addEventListener("click", () => {
+  secaoAluno.style.display = "none";
+  secaoProfessor.style.display = "none";
+  secaoTurma.style.display = "none";
+  secaoDisciplina.style.display = "none";
+  secaoSala.style.display = "none";
+  secaoVinculacao.style.display = "block";
 });
