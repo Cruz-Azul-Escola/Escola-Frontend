@@ -72,3 +72,19 @@
   border-radius: 20px;
   border: 2px solid var(--borda);
 }
+
+iframe {
+  display: none;
+}
+
+.opcoes-selecao {
+  position: relative;
+  top: 50%;
+  display: none;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+}
+.opcoes-selecao button:nth-child(n+2) {
+  background-color: var(--corAzul);
+}

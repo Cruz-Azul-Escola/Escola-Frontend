@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="../assets/icons/Logo da escola.png" type="image/x-icon">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/styleAdmin.css">
+  <script defer src="../scripts/scriptAdmin.js"></script>
   <title>Cruz Azul – Portal do Administrador</title>
 </head>
 <body>
@@ -36,12 +37,47 @@
       </div>
     </section>
     <section class="toolbar">
-      <button>Adicionar</button>
-      <button>Remover</button>
-      <button>Visualizar</button>
+      <button id="view-cadastrar">Adicionar</button>
+      <button id="view-alterar">Alterar</button>
+      <button id="view-excluir">Remover</button>
+      <button id="view-visualizar">Visualizar</button>
       <input type="text" placeholder="">
     </section>
-    <section class="content-panel"></section>
+    <section class="content-panel">
+      <!-- Cadastro -->
+      <div id="campo-cadastrar" class="opcoes-selecao">
+        <button id="abrir-aluno-cadastrar" class="abrir-iframe">Adicionar Aluno</button>
+        <button id="abrir-professor-cadastrar" class="abrir-iframe">Adicionar Professor</button>
+      </div>
+
+      <!-- Alterar -->
+      <div id="campo-alterar" class="opcoes-selecao">
+        <button id="abrir-aluno-alterar" class="abrir-iframe">Alterar Aluno</button>
+        <button id="abrir-professor-alterar" class="abrir-iframe">Alterar Professor</button>
+      </div>
+
+      <!-- Excluir -->
+      <div id="campo-excluir" class="opcoes-selecao">
+        <button id="abrir-aluno-excluir" class="abrir-iframe">Excluir Aluno</button>
+        <button id="abrir-professor-excluir" class="abrir-iframe">Excluir Professor</button>
+      </div>
+
+      <!-- Visualizar -->
+      <div id="campo-visualizar" class="opcoes-selecao">
+        <button id="abrir-aluno-visualizar" class="abrir-iframe">Visualizar Alunos</button>
+        <button id="abrir-professor-visualizar" class="abrir-iframe">Visualizar Professores</button>
+      </div>
+
+      <!-- Iframes -->
+      <iframe id="cadastrar-aluno" src="" frameborder="0"></iframe>
+      <iframe id="alterar-aluno" src="" frameborder="0"></iframe>
+      <iframe id="exluir-aluno" src="" frameborder="0"></iframe>
+      <iframe id="visualizar-aluno" src="" frameborder="0"></iframe>
+      <iframe id="cadastrar-professor" src="" frameborder="0"></iframe>
+      <iframe id="alterar-professor" src="" frameborder="0"></iframe>
+      <iframe id="excluir-professor" src="" frameborder="0"></iframe>
+      <iframe id="visualizar-professor" src="" frameborder="0"></iframe>
+    </section>
   </main>
 </body>
 </html>
