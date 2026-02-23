@@ -421,11 +421,126 @@
       </div>
 
       <div id="secao-sala" class="secoes">
+        <h2>Cadastro de Sala</h2>
+        <form id="form-sala-criar" method="post" action="admin">
+          <input type="hidden" name="acao" value="criarSala">
+          <div>
+            <label>Nome da Sala</label>
+            <input type="text" name="nomeSala" placeholder="Nome da Sala" required>
+          </div>
+          <div>
+            <label>Capacidade</label>
+            <input type="number" name="capacidade" placeholder="Capacidade" required>
+          </div>
+          <button type="submit" class="confirmar">Salvar</button>
+        </form>
 
+        <hr>
+
+        <h2>Salas Cadastradas</h2>
+        <table cellpadding="5" class="tabela">
+          <thead>
+            <tr>
+              <th style="width:70px;">ID</th>
+              <th>Nome</th>
+              <th style="width:120px;">Capacidade</th>
+              <th style="width:160px;">Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-salas-body">
+          </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Alterar Sala</h2>
+        <form id="form-sala-alterar" method="post" action="admin">
+          <input type="hidden" name="acao" value="salvarSala">
+          <input type="hidden" name="tipo" value="sala">
+          <input type="hidden" name="id" id="sala-edit-id">
+          <div>
+            <label>ID</label>
+            <input type="text" name="nomeSala" id="sala-edit-nomeSala" placeholder="ID" required>
+          </div>
+          <div>
+            <label>Nome da Sala</label>
+            <input type="text" name="nomeSala" id="sala-edit-nomeSala" placeholder="Nome da Sala" required>
+          </div>
+          <div>
+            <label>Capacidade</label>
+            <input type="number" name="capacidade" id="sala-edit-capacidade" placeholder="Capacidade" required>
+          </div>
+          <button type="submit" class="confirmar">Salvar Alterações</button>
+        </form>
+
+        <hr>
+
+        <h2>Remover Sala</h2>
+        <form id="form-sala-excluir" method="post" action="admin">
+          <input type="hidden" name="acao" value="excluirSala">
+          <div>
+            <label>ID</label>
+            <input type="number" name="id" placeholder="Digite o ID para excluir" required>
+          </div>
+          <div>
+            <label>Confirmação</label>
+            <input type="number" name="confirmacao" placeholder="Confirme o ID" required>
+          </div>
+          <button type="submit" class="confirmar">Excluir</button>
+        </form>
       </div>
 
       <div id="secao-vinculacao" class="secoes">
+        <h2>Vinculações</h2>
+        <div>
+          <h3>Aluno x Turma</h3>
+          <form method="post" action="admin">
+            <input type="hidden" name="acao" value="vincularAlunoTurma">
+            <div>
+              <label for="">ID do Aluno</label>
+              <input type="number" name="idAluno" placeholder="ID do Aluno" required>
+            </div>
+            <div>
+              <label for="">ID da Turma</label>
+              <input type="number" name="idTurma" placeholder="ID da Turma" required>
+            </div>
+            <button type="submit" class="confirmar">Vincular</button>
+          </form>
+        </div>
+        <hr>
 
+        <div>
+          <h3>Professor x Turma</h3>
+          <form method="post" action="admin">
+            <input type="hidden" name="acao" value="vincularProfessorTurma">
+            <div>
+              <label for="">ID do professor</label>
+              <input type="number" name="idProfessor" placeholder="ID do Professor" required>
+            </div>
+            <div>
+              <label for="">ID da Turma</label>
+              <input type="number" name="idTurma" placeholder="ID da Turma" required>
+            </div>
+            <button type="submit" class="confirmar">Vincular</button>
+          </form>
+        </div>
+        <hr>
+
+        <div>
+          <h3>Professor x Disciplina</h3>
+          <form method="post" action="admin">
+            <input type="hidden" name="acao" value="vincularProfessorDisciplina">
+            <div>
+              <label for="">ID do professor</label>
+              <input type="number" name="idProfessor" placeholder="ID do Professor" required>
+            </div>
+            <div>
+              <label for="">ID da disciplina</label>
+              <input type="number" name="idDisciplina" placeholder="ID da Disciplina" required>
+            </div>
+            <button type="submit" class="confirmar">Vincular</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
