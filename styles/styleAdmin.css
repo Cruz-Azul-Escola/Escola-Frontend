@@ -67,6 +67,7 @@
 }
 .secoes {
   display: none;
+  overflow: hidden;
 }
 h3 {
   color: var(--corAzul);
@@ -76,12 +77,6 @@ h3 {
 }
 hr {
   margin: 40px 0px;
-}
-table {
-  width: 100%;
-  border-radius: 16px;
-  border: 2px solid var(--corAzul);
-  margin-bottom: 20px;
 }
 tr {
   text-align: left;
@@ -122,24 +117,6 @@ form button {
   width: 100%;
 }
 
-.tabela {
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-.tabela th, .tabela td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid var(--corAzul);
-}
-.tabela th {
-  background: #E9F1FF;
-  font-weight: 600;
-}
-.tabela tbody tr:nth-child(even) {
-  background: var(--corAzul);
-  color: white;
-}
-
 iframe {
   position: fixed;
   top: 50%;
@@ -152,6 +129,10 @@ iframe {
   border: none;
   display: none;
   z-index: 9999;
+}
+
+.confirmar {
+  width: 99%;
 }
 
 @media (max-width: 760px) {
