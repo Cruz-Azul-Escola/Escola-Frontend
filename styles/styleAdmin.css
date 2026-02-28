@@ -3,7 +3,6 @@
     --corAzulSaturada: #E8F0FE;
     --corAmarelo: #F5B800;
     --corLaranja: #FF8000;
-    --borda: #D6E3FF;
     --tamanho16px: 16px;
     --tamanho22px: 22px;
     --tamanho36px: 36px;
@@ -141,11 +140,28 @@ form button {
   color: white;
 }
 
+iframe {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  min-width: 380px;
+  height: 450px;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  border: none;
+  display: none;
+  z-index: 9999;
+}
+
 @media (max-width: 760px) {
   #toolbar {
     flex-direction: column;
   }
   #toolbar button {
     width: 100%;
+  }
+  form {
+    grid-template-columns: 1fr;
   }
 }

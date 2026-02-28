@@ -13,7 +13,7 @@
   <title>Cruz Azul – Portal do Administrador</title>
 </head>
 <body>
-  <header>
+  <header id="topBar">
     <div id="logotipo">
       <div>
         <img src="../assets/icons/Logo da escola.png" alt="">
@@ -118,16 +118,8 @@
         <hr>
 
         <h2>Remover Aluno</h2>
-        <form action="">
-          <div>
-              <label for="">ID</label>
-              <input type="text" name="id" placeholder="Digite o ID para excluir" required>
-            </div>
-            <div>
-              <label for="">Confirmação</label>
-              <input type="text" name="idConfirmacao" placeholder="Confirme o ID" required>
-            </div>
-            <button type="submit" class="confirmar">Excluir</button>
+        <form>
+          <button class="button-popUp-excluir" type="submit" class="confirmar">Selecionar</button>
         </form>
       </div>
 
@@ -246,15 +238,7 @@
         <form method="post" action="admin">
           <input type="hidden" name="entidade" value="professor">
           <input type="hidden" name="acao" value="excluir">
-          <div>
-            <label for="">ID</label>
-            <input type="number" name="id" placeholder="Digite o ID para excluir" required>
-          </div>
-          <div>
-            <label for="">Confirmação</label>
-            <input type="number" name="confirmacao" placeholder="Confirme o ID" required>
-          </div>
-          <button type="submit" class="confirmar">Excluir</button>
+          <button class="button-popUp-excluir" type="submit" class="confirmar">Selecionar</button>
         </form>
       </div>
 
@@ -329,15 +313,7 @@
 
         <h2>Remover Turma</h2>
         <form action="">
-          <div>
-              <label for="">ID</label>
-              <input type="text" name="id" placeholder="Digite o ID para excluir" required>
-            </div>
-            <div>
-              <label for="">Confirmação</label>
-              <input type="text" name="idConfirmacao" placeholder="Confirme o ID" required>
-            </div>
-            <button type="submit" class="confirmar">Excluir</button>
+          <button class="button-popUp-excluir" type="submit" class="confirmar">Selecionar</button>
         </form>
       </div>
 
@@ -405,19 +381,10 @@
         <hr>
 
         <h2>Remover Disciplina</h2>
-        <form method="post" action="admin">
           <input type="hidden" name="entidade" value="disciplina">
           <input type="hidden" name="acao" value="excluir">
-          <div>
-            <label for="">ID</label>
-            <input type="number" name="id" placeholder="Digite o ID para excluir" required>
-          </div>
-          <div>
-            <label for="">Confirmação</label>
-            <input type="number" name="confirmacao" placeholder="Confirme o ID" required>
-          </div>
-          <button type="submit" class="confirmar">Excluir</button>
-        </form>
+          <button class="button-popUp-excluir" type="submit" class="confirmar">Selecionar</button>
+        
       </div>
 
       <div id="secao-sala" class="secoes">
@@ -478,15 +445,7 @@
         <h2>Remover Sala</h2>
         <form id="form-sala-excluir" method="post" action="admin">
           <input type="hidden" name="acao" value="excluirSala">
-          <div>
-            <label>ID</label>
-            <input type="number" name="id" placeholder="Digite o ID para excluir" required>
-          </div>
-          <div>
-            <label>Confirmação</label>
-            <input type="number" name="confirmacao" placeholder="Confirme o ID" required>
-          </div>
-          <button type="submit" class="confirmar">Excluir</button>
+          <button class="button-popUp-excluir" type="submit" class="confirmar">Selecionar</button>
         </form>
       </div>
 
@@ -545,6 +504,6 @@
     </section>
   </main>
 
-  <iframe id="popUp-alterar-dados" src="" frameborder="0"></iframe>
+  <iframe id="popUp-excluir-dados" src="popUpExcluirDados.html" frameborder="0"></iframe>
 </body>
 </html>

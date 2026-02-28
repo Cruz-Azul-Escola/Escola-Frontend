@@ -196,9 +196,11 @@ iframe {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 90%;
-  height: 100vh;
+  width: 60%;
+  min-width: 380px;
+  height: 450px;
   transform: translate(-50%, -50%);
+  border-radius: 15px;
   border: none;
   display: none;
   z-index: 9999;
@@ -210,6 +212,7 @@ iframe {
   form { flex-direction: column; }
   form div { margin: auto; width: 100%; }
   form button { width: 100%; }
+  #info-aluno { grid-template-columns: 1fr;}
   #formula-nota{ grid-template-columns: 1fr; gap: 20px; }
   #opcoes-edicao{ flex-direction: column; }
   #opcoes-edicao button { width: 100%; }
