@@ -52,7 +52,7 @@
 .container{
   max-width:980px;       
   margin:0 auto;
-  padding:28px 18px 60px; 
+  padding: 30px 20px;
 }
 
 .cartao{
@@ -106,7 +106,10 @@
   line-height:1;
 }
 
-.boletim{ padding:16px; }  
+.boletim{
+  padding: 16px;
+  overflow: hidden;
+}  
 
 .topo-boletim{
   display:flex;
@@ -165,27 +168,6 @@
   box-shadow:0 6px 14px rgba(10,40,90,.06);
 }
 
-.tabela {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-  border: 2px solid var(--corAzul);
-}
-.tabela th, .tabela td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid var(--corAzul);
-}
-.tabela th {
-  background: #E9F1FF;
-  font-weight: 600;
-}
-.tabela tbody tr:nth-child(even) {
-  background: var(--corAzul);
-  color: white;
-}
-
 @media (max-width: 760px){
-  .container{ padding:20px 14px 50px; }
   .estatisticas{ grid-template-columns:1fr; }
 }

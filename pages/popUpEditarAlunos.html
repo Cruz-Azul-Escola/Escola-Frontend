@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/styleAdmin.css">
+  <title>Editar Aluno</title>
+</head>
+
+<body class="popup-body">
+  <div class="popup">
+    <div class="popup-topo">
+      <h2>Informações</h2>
+
+      <button type="button" class="popup-fechar" aria-label="Fechar">X</button>
+    </div>
+
+        <form method="post" action="admin" class="popup-form">
+        <input type="hidden" name="entidade" value="professor">
+        <input type="hidden" name="acao" value="alterar">
+
+        <div>
+                <label for="">ID</label>
+                <input type="text" name="id" placeholder="Nome" required>
+            </div>
+            <div>
+                <label for="">Nome</label>
+                <input type="text" name="nome" placeholder="Nome" required>
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="text" name="email" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="">CPF</label>
+                <input type="text" name="cpf" placeholder="CPF" required>
+            </div>
+            <div>
+                <label for="">Matrícula</label>
+                <input type="text" name="matricula" placeholder="Matrícula" required>
+            </div>
+            <div>
+                <label for="">Turma</label>
+                <select name="idSala" required>
+                    <option value="">Selecione a Turma</option>
+                    <option value="">Valor1</option>
+                </select>
+            </div>
+
+        <button type="submit" class="confirmar">Salvar</button>
+        </form>
+  </div>
+</body>
+</html>

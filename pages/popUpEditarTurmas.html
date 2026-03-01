@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/styleAdmin.css">
+  <title>Editar Turma</title>
+</head>
+
+<body class="popup-body">
+  <div class="popup">
+        <div class="popup-topo">
+        <h2>Informações</h2>
+
+        <button type="button" class="popup-fechar" aria-label="Fechar">X</button>
+        </div>
+
+        <form method="post" action="admin" class="popup-form">
+        <input type="hidden" name="entidade" value="professor">
+        <input type="hidden" name="acao" value="alterar">
+
+        <div>
+            <label for="">ID</label>
+            <input type="text" name="id" placeholder="Nome" required>
+        </div>
+        <div>
+            <label for="">Disciplina</label>
+            <select name="idDisciplina" required>
+              <option value="">Selecione a Disciplina</option>
+              <option value="">Valor1</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Sala</label>
+            <select name="idDisciplina" required>
+              <option value="">Selecione a Sala</option>
+              <option value="">Valor1</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Período Letivo</label>
+            <input type="text" name="periodoLetivo" placeholder="Ex: 2026/1" required>
+        </div>
+
+        <button type="submit" class="confirmar">Salvar</button>
+        </form>
+  </div>
+</body>
+</html>
