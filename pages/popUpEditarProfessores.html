@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/styleAdmin.css">
+  <title>Editar Professor</title>
+</head>
+
+<body class="popup-body">
+  <div class="popup">
+    <div class="popup-topo">
+      <h2>Informações</h2>
+
+      <button type="button" class="popup-fechar" aria-label="Fechar">X</button>
+    </div>
+
+    <form method="post" action="admin" class="popup-form">
+      <input type="hidden" name="entidade" value="professor">
+      <input type="hidden" name="acao" value="alterar">
+
+        <div>
+            <label for="">ID</label>
+            <input type="number" name="id" placeholder="ID" required>
+        </div>
+        <div>
+            <label for="">Nome</label>
+            <input type="text" name="nome" placeholder="Nome">
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="email" name="email" placeholder="Email">
+        </div>
+        <div>
+            <label for="">Senha</label>
+            <input type="text" name="senha" placeholder="Senha">
+        </div>
+        <div>
+            <label for="">Turmas</label>
+            <select name="turmas" required>
+              <option value="">Selecione a turma</option>
+              <option value="1">2º Ano J</option>
+              <option value="2">2º Ano E</option>
+              <option value="3">2º Ano F</option>
+            </select>
+        </div>
+
+      <button type="submit" class="confirmar">Salvar</button>
+    </form>
+  </div>
+</body>
+</html>

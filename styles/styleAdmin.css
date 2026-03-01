@@ -135,6 +135,73 @@ iframe {
   width: 99%;
 }
 
+.popup-body{
+  background: transparent;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+}
+
+.popup{
+  width:min(520px, 92vw);
+  background:#fff;
+  border-radius:18px;
+  padding:18px 18px 14px;
+  box-shadow:0 18px 40px rgba(0,0,0,.18);
+}
+
+.popup-topo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  margin-bottom:10px;
+}
+
+.popup-topo h2{
+  margin:0;
+  font-weight:700;
+  color:#000;
+}
+
+.popup-fechar{
+  position:absolute;
+  right:0;
+  top:0;
+  width:32px;
+  height:32px;
+  border-radius:8px;
+  border:none;
+  background:var(--corAzul);
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:none;
+}
+
+.popup-form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.popup-form div{
+  width:100%;
+}
+
+.popup-form label{
+  font-size:14px;
+  margin-left:16px;
+  margin-bottom:-14px;
+}
+
+.popup-form input,
+.popup-form select{
+  height:46px;         
+  border-radius:60px;
+}
+
 @media (max-width: 760px) {
   #toolbar {
     flex-direction: column;
