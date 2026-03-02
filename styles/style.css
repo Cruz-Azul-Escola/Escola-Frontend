@@ -139,26 +139,37 @@ button {
 .tabela-container {
     overflow: auto;
     max-height: 300px;
-  }
-  .tabela {
+}
+.tabela {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
     border: 2px solid var(--corAzul);
-  }
-  .tabela th, .tabela td {
+}
+.tabela th, .tabela td {
     padding: 10px;
     text-align: center;
     border: 1px solid var(--corAzul);
-  }
-  .tabela th {
+}
+.tabela th {
     background: #E9F1FF;
     font-weight: 600;
-  }
-  .tabela tbody tr:nth-child(even) {
+}
+.tabela tbody tr:nth-child(even) {
     background: var(--corAzul);
     color: white;
-  }
+}
+
+.fechar {
+    width: 50px;
+    height: 50px;
+    background: #0D4DB8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
 
 @media (max-width: 500px) {
     header img {

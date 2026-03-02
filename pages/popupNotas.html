@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Lançar Notas</title>
-  <link rel="stylesheet" href="../styles/stylePopupNotas.css">
-  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="/styles/stylePopupNotas.css">
+  <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
 
@@ -12,16 +12,16 @@
   <div class="modal">
     <div id="cabecalho-iframe">
       <h2>Lançar Notas</h2>
-      <button id="fecharNotas">✕</button>
+      <button id="fecharNotas" class="fechar">✕</button>
     </div>
     <p class="aluno">Aluno: João</p>
 
     <form>
       <label>Nota 1 (0–10)</label>
-      <input name="nota1" type="number" min="0" max="10" required>
+      <input name="nota1" type="number" placeholder="Digite a nota 1" min="0" max="10" required>
 
       <label>Nota 2 (0–10)</label>
-      <input name="nota2" type="number" min="0" max="10" required>
+      <input name="nota2" type="number" placeholder="Digite a nota 2" min="0" max="10" required>
 
       <button class="confirmar" type="submit">Salvar Notas</button>
     </form>

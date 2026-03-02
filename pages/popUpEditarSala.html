@@ -6,8 +6,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/styleAdmin.css">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/styleAdmin.css">
   <title>Editar Sala</title>
 </head>
 
@@ -16,26 +16,23 @@
     <div class="popup-topo">
       <h2>Informações</h2>
 
-      <button type="button" class="popup-fechar" aria-label="Fechar">X</button>
+      <button type="button" class="fechar" aria-label="Fechar">✕</button>
     </div>
-
     <form method="post" action="admin" class="popup-form">
       <input type="hidden" name="entidade" value="professor">
       <input type="hidden" name="acao" value="alterar">
-
-        <div>
-            <label>ID</label>
-            <input type="text" name="nomeSala" id="sala-edit-nomeSala" placeholder="ID" required>
-        </div>
-        <div>
-            <label>Nome da Sala</label>
-            <input type="text" name="nomeSala" id="sala-edit-nomeSala" placeholder="Nome da Sala" required>
-        </div>
-        <div>
-            <label>Capacidade</label>
-            <input type="number" name="capacidade" id="sala-edit-capacidade" placeholder="Capacidade" required>
-        </div>
-
+      <div>
+          <label>ID</label>
+          <input type="text" name="nomeSala" id="sala-edit-nomeSala" placeholder="ID" required>
+      </div>
+      <div>
+          <label>Nome da Sala</label>
+          <input type="text" name="nomeSala" id="sala-edit-nomeSala" placeholder="Nome da Sala" required>
+      </div>
+      <div>
+          <label>Capacidade</label>
+          <input type="number" name="capacidade" id="sala-edit-capacidade" placeholder="Capacidade" required>
+      </div>
       <button type="submit" class="confirmar">Salvar</button>
     </form>
   </div>

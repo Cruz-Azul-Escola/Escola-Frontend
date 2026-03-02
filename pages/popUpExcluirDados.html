@@ -1,33 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/stylePopUpExcluirDados.css">
-    <title>Alterar Dados</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/styleAdmin.css">
+  <title>Excluir Dados</title>
 </head>
-<body>
-    <div class="overlay">
-        <div class="modal">
-          <div id="cabecalho-iframe">
-            <h2>Excluir</h2>
-            <button id="fechar">✕</button>
-          </div>
-          <form>
-            <div>
-              <label>ID</label>
-              <input name="id" required>
-            </div>
-      
-            <div>
-              <label>ID Confirmação</label>
-              <input name="idConfirmacao" required>
-            </div>
-      
-            <button id="salvar" class="confirmar" type="submit">Salvar Notas</button>
-          </form>
-        </div>
+
+<body class="popup-body">
+  <div class="popup">
+    <div class="popup-topo">
+      <h2>Excluir</h2>
+
+      <button type="button" class="fechar" aria-label="Fechar">✕</button>
     </div>
+    <form method="post" action="admin" class="popup-form">
+      <input type="hidden" name="entidade" value="professor">
+      <input type="hidden" name="acao" value="alterar">
+      <div>
+          <label>ID</label>
+          <input type="text" name="id" placeholder="Digite o ID" required>
+      </div>
+      <div>
+          <label>Confirme o ID</label>
+          <input type="text" name="confirmacaoID" placeholder="Confirme o ID" required>
+      </div>
+      <button type="submit" class="confirmar">Salvar</button>
+    </form>
+  </div>
 </body>
 </html>
