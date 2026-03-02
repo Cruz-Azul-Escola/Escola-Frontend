@@ -192,6 +192,76 @@ form button img {
   box-shadow: 0px 0px 10px var(--corLaranja);
 }
 
+.abas{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  background:var(--corAzulSaturada);
+  border-radius:10px;
+  padding:4px;                          
+  margin: 16px 20px;                    
+  border:1px solid rgba(216,227,246,.95); 
+}
+.aba{
+  padding:9px 8px;      
+  text-align:center;
+  font-weight:800;
+  font-size:12px;       
+  border-radius:8px;
+  text-decoration:none;
+  color:var(--corAzul);
+  display:block;          
+  cursor:pointer;
+}
+
+#observacoes-lancadas{
+  flex-direction:column;
+  gap:14px;
+  padding: 10px 20px;
+  max-height: 200px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.card-observacao{
+  display:grid;
+  grid-template-columns: 8px 1fr;
+  border-radius:12px;
+  background:#fff;
+  border:1px solid rgba(0,0,0,.10);
+  box-shadow: 0 8px 18px rgba(10,40,90,.06);
+  overflow:hidden;
+  width: 100%;
+  max-width: 100%;
+  min-height: 80px;
+}
+.barra-lateral{
+  background:#FF8A00;
+}
+.observacao-conteudo{
+  padding:14px 16px;
+}
+.disciplina{
+  font-weight:800;
+  color:var(--azul-escuro);
+  font-size:12px;
+}
+.professor{
+  font-weight:700;
+  color:#2E4B7A;
+  font-size:10px;
+  margin-top:2px;
+  opacity:.9;
+}
+.observacao-texto{
+  margin-top:10px;
+  font-size:11px;
+  font-weight:600;
+  color:#2E4B7A;
+}
+
+.areas {
+  display: none;
+}
+
 iframe {
   position: fixed;
   top: 50%;

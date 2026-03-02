@@ -6,10 +6,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/styleProfessor.css">
-  <link rel="shortcut icon" href="../assets/icons/Logo da escola.png" type="image/x-icon">
-  <script defer src="../scripts/scriptAbrirIframeProfessor.js"></script>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/styleProfessor.css">
+  <link rel="shortcut icon" href="/assets/icons/Logo da escola.png" type="image/x-icon">
+  <script defer src="/scripts/scriptAbrirIframeProfessor.js"></script>
+  <script defer src="/scripts/scriptProfessor.js"></script>
   <title>Cruz Azul - Portal do Professor</title>
 </head>
 
@@ -17,16 +18,16 @@
   <header id="cabecalho-site">
     <div id="logotipo">
       <div>
-          <img src="../assets/icons/Logo da escola.png" alt="">
+          <img src="/assets/icons/Logo da escola.png" alt="">
       </div>
       <div>
           <h1>Cruz Azul</h1>
           <h4>Portal do Professor</h4>
       </div>
     </div>
-    <a href="../index.html">
+    <a href="/index.html">
       <div id="voltar">
-          <img src="../assets/icons/voltar.png" alt="">
+          <img src="/assets/icons/voltar.png" alt="">
           <h4>Sair</h4>
       </div>
     </a>
@@ -59,27 +60,18 @@
     <section class="cartao">
       <div id="cabecalho-busca">
         <div id="titulo-busca">
-          <img src="../assets/icons/lupa azul.png" alt="">
+          <img src="/assets/icons/lupa azul.png" alt="">
           <h3>Buscar Aluno</h3>
         </div>
-        <p>Digite o nome do aluno para visualizar e editar informações</p>
+        <p>Digite a mátricula do aluno para visualizar e editar informações</p>
       </div>
       <form>
         <div>
-          <label for="">Turma</label>
-          <input name="turma" type="text" list="turmas">
-          <datalist id="turmas">
-            <option value="Turma 1">Turma 1</option>
-            <option value="Turma 2">Turma 2</option>
-            <option value="Turma 3">Turma 3</option>
-          </datalist>
-        </div>
-        <div>
-          <label for="">Nome do Aluno</label>
-          <input name="nome-aluno" type="text">
+          <label for="">Mátricula</label>
+          <input name="matricula" type="number">
         </div>
         <button type="submit">
-          <img src="../assets/icons/lupa branca.png" alt="">
+          <img src="/assets/icons/lupa branca.png" alt="">
           <p>Buscar</p>
         </button>
       </form>
@@ -104,7 +96,11 @@
           <h3><a href="mailto:">aluno.sei.la@gmail.com</a></h3>
         </div>
       </div>
-      <div id="notas-lancadas">
+      <div class="abas">
+        <a class="aba" id="abrirNotas">Notas</a>
+        <a class="aba" id="abrirObservacoes">Observações</a>
+      </div>
+      <div id="notas-lancadas" class="areas">
         <h3>Notas Lançadas</h3>
         <div id="formula-nota">
           <div>
@@ -121,10 +117,42 @@
           </div>
         </div>
       </div>
-        <div id="opcoes-edicao">
-          <button id="btn-notas">Lançar/Editar Notas</button>
-          <button id="btn-observacoes">Fazer/Editar Observação</button>
-        </div>
+      <div id="observacoes-lancadas" class="areas">
+          <article class="card-observacao">
+            <div class="barra-lateral"></div>
+  
+            <div class="observacao-conteudo">
+              <div class="observacao-topo">
+                <div class="disciplina">Matemática</div>
+                <div class="professor">Professor(a): Ana Souza</div>
+              </div>
+  
+              <div class="observacao-texto">
+                Longa e chata observação que estou com preguiça de escrever
+              </div>
+            </div>
+          </article>
+  
+  
+          <article class="card-observacao">
+            <div class="barra-lateral"></div>
+  
+            <div class="observacao-conteudo">
+              <div class="observacao-topo">
+                <div class="disciplina">Matemática</div>
+                <div class="professor">Professor(a): Ana Souza</div>
+              </div>
+  
+              <div class="observacao-texto">
+                Longa e chata observação que estou com preguiça de escrever
+              </div>
+            </div>
+          </article>
+      </div>
+      <div id="opcoes-edicao">
+        <button id="btn-notas">Lançar/Editar Notas</button>
+        <button id="btn-observacoes">Fazer/Editar Observação</button>
+      </div>
     </section>
   </main>
 
