@@ -140,17 +140,20 @@
   cursor:pointer;
   box-shadow:0 8px 18px rgba(245,180,0,.18); 
 }
+.abas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .abas{
   display:grid;
   grid-template-columns:1fr 1fr;
-  background:var(--fundo-claro);
+  background:var(--corAzulSaturada);
   border-radius:10px;
   padding:4px;                          
-  margin:8px 0 14px;                    
+  margin: 16px 20px;                    
   border:1px solid rgba(216,227,246,.95); 
 }
-
 .aba{
   padding:9px 8px;      
   text-align:center;
@@ -158,16 +161,82 @@
   font-size:12px;       
   border-radius:8px;
   text-decoration:none;
-  color:var(--azul-escuro);
+  color:var(--corAzul);
   display:block;          
   cursor:pointer;
 }
 
-.ativa{
+.abas .aba{
+  all: unset;                 /* remove estilo padrão do botão */
+  display: flex;              /* centraliza texto */
+  align-items: center;
+  justify-content: center;
+
+  padding: 9px 8px;
+  font-weight: 800;
+  font-size: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  color: var(--azul-escuro);
+  text-align: center;
+}
+
+.abas .aba.ativa{
+  background: #fff;
+  box-shadow: 0 6px 14px rgba(10,40,90,.06);
+}
+.area-conteudo{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  padding: 10px 6px 6px;
+}
+
+.card-observacao{
+  display:grid;
+  grid-template-columns: 8px 1fr;
+  border-radius:12px;
   background:#fff;
-  box-shadow:0 6px 14px rgba(10,40,90,.06);
+  border:1px solid rgba(0,0,0,.10);
+  box-shadow: 0 8px 18px rgba(10,40,90,.06);
+  overflow:hidden;
+
+  width: 100%;
+  max-width: 100%;   
+}
+
+
+.barra-lateral{
+  background:#FF8A00;
+}
+
+.observacao-conteudo{
+  padding:14px 16px;
+}
+
+.disciplina{
+  font-weight:800;
+  color:var(--azul-escuro);
+  font-size:12px;
+}
+
+.professor{
+  font-weight:700;
+  color:#2E4B7A;
+  font-size:10px;
+  margin-top:2px;
+  opacity:.9;
+}
+
+.observacao-texto{
+  margin-top:10px;
+  font-size:11px;
+  font-weight:600;
+  color:#2E4B7A;
 }
 
 @media (max-width: 760px){
+  .container{ padding:20px 14px 50px; }
   .estatisticas{ grid-template-columns:1fr; }
 }
